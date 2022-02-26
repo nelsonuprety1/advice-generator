@@ -9,19 +9,27 @@ body {
     background-color: hsl(220, 22%, 16%);
 }
 
-h1 {
-    color: hsl(150, 100%, 66%);
-    font-weight: 400;
+#container {
+    display: flex;
+    flex-direction: column;
+    max-height: 100vh;
+    max-width: 350px;
+    margin: 100px auto;
+    background-color: hsl(218, 20%, 24%);
 }
 
-.container {
-    /* display: flex;
-    flex-direction: column; */
-    background-color: hsl(217, 19%, 24%);
+.box {
     height: 50vh;
-    padding: 3em;
-    margin: 5em;
-    min-width: 80vw;
+    width: 100%;
+}
+
+.heading {
+    color: hsl(150, 100%, 66%);
+    letter-spacing: 3px;
+    text-align: center;
+    padding-top: 3em;
+    font-size: 0.7em;
+    font-weight: 300;
 }
 
 .green {
@@ -32,9 +40,9 @@ h1 {
     display: inline-block;
 }
 
-.advice {
-    color: rgba(210, 224, 235, 255);
-    font-weight: 700;
+.dice {
+    height: 30px;
+    width: 30px;
 }
 
 .attribution {
