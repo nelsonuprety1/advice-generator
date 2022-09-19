@@ -18,10 +18,8 @@ async function adviceGenerator() {
 
   const data = await res.json();
   renderAdvice(data);
-  console.log(data.slip.advice);
-  console.log(data.slip.id);
 }
 
-dice.addEventListener('click', adviceGenerator());
+dice.addEventListener('click', adviceGenerator);
 
-// adviceGenerator();
+adviceGenerator();
